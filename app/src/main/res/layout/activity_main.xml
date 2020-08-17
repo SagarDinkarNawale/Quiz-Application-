@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_x="84dp"
+        android:layout_y="18dp"
+        android:text="Aptitude Quiz..!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="110dp"
+        android:text="Q1 All keywords in C are in______ ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="160dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb11"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text=" LowerCase letters" />
+
+        <RadioButton
+            android:id="@+id/rb12"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="UpperCase letters" />
+
+        <RadioButton
+            android:id="@+id/rb13"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="CamelCase letters" />
+
+        <RadioButton
+            android:id="@+id/rb14"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="None of the mentioned" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="360dp"
+        android:text="Q2 Which of the following is not a valid C variable name ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="420dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb21"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="int number" />
+
+        <RadioButton
+            android:id="@+id/rb22"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="float rate" />
+
+        <RadioButton
+            android:id="@+id/rb23"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text=" int variable_count" />
+
+        <RadioButton
+            android:id="@+id/rb24"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="int $main" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/q3"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="610dp"
+        android:text="Q3 Which is valid C expression ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="670dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb31"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="int my_num = 100,000" />
+
+        <RadioButton
+            android:id="@+id/rb32"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="int my_num = 100000;" />
+
+        <RadioButton
+            android:id="@+id/rb33"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="int my num = 1000" />
+
+        <RadioButton
+            android:id="@+id/rb34"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="int $my_num = 10000" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/q4"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="880dp"
+        android:text="Q4 Which of the following is not a valid variable name declaration?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="940dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb41"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="float PI = 3.14" />
+
+        <RadioButton
+            android:id="@+id/rb42"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="double PI = 3.14" />
+
+        <RadioButton
+            android:id="@+id/rb43"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="int PI = 3.14" />
+
+        <RadioButton
+            android:id="@+id/rb44"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text=" #define PI 3.14" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/q5"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="1130dp"
+        android:text="Q5 Which of the following cannot be a variable name in C?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="1190dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb51"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="volatile" />
+
+        <RadioButton
+            android:id="@+id/rb52"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="true" />
+
+        <RadioButton
+            android:id="@+id/rb53"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text=" friend" />
+
+        <RadioButton
+            android:id="@+id/rb54"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="export" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/q6"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="1380dp"
+        android:text="Q6 What is the size of an int data type ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="1440dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb61"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="4 Bytes" />
+
+        <RadioButton
+            android:id="@+id/rb62"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text=" 8 Bytes" />
+
+        <RadioButton
+            android:id="@+id/rb63"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="Depends on the system/compiler" />
+
+        <RadioButton
+            android:id="@+id/rb64"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="Cannot be determined" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/q7"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="1630dp"
+        android:text="Q7 User-defined data type can be derived by___________ ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="1690dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb71"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="struct" />
+
+        <RadioButton
+            android:id="@+id/rb72"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="enum" />
+
+        <RadioButton
+            android:id="@+id/rb73"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="typedef" />
+
+        <RadioButton
+            android:id="@+id/rb74"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="all of the mentioned" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/q8"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="1880dp"
+        android:text="Q8 Which of the data types has the size that is variable? ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="1940dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb81"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="int" />
+
+        <RadioButton
+            android:id="@+id/rb82"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="struct" />
+
+        <RadioButton
+            android:id="@+id/rb83"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="float" />
+
+        <RadioButton
+            android:id="@+id/rb84"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="double" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/q9"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="2130dp"
+        android:text="Q9 ______ is reported on a domain error ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="2190dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb91"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="EDOM" />
+
+        <RadioButton
+            android:id="@+id/rb92"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="ERANGE" />
+
+        <RadioButton
+            android:id="@+id/rb93"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="Signiﬁcance loss" />
+
+        <RadioButton
+            android:id="@+id/rb94"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="Underflow" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/q10"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="2390dp"
+        android:text="Q10 Which of the following method is accepted for assignment ?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <RadioGroup
+        android:layout_width="344dp"
+        android:layout_height="170dp"
+        android:layout_x="38dp"
+        android:layout_y="2450dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="182dp">
+
+        <RadioButton
+            android:id="@+id/rb101"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="5 = a = b = c = d" />
+
+        <RadioButton
+            android:id="@+id/rb102"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+
+            android:text="a = b = c = d = 5" />
+
+        <RadioButton
+            android:id="@+id/rb103"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_weight="1"
+            android:text="a = b = 5 = c = d" />
+
+        <RadioButton
+            android:id="@+id/rb104"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="None of the mentioned" />
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="220dp"
+        android:layout_height="41dp"
+        android:layout_x="170dp"
+        android:ems="10"
+        android:layout_y="2695dp"
+        android:text="Submit Test...!"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:layout_x="20dp"
+        android:ems="10"
+        android:layout_y="2695dp"
+        android:text="Clear  !"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_x="44dp"
+        android:layout_y="2730dp"
+        android:text=""
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+
+
+</AbsoluteLayout>
+</ScrollView>
